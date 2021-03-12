@@ -1,16 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bank</title>
-</head>
+<html>
+<title>Helene Bank</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    #home_page{
+        background-image: url('background.jpg');  
+        height: 100%;
+        width: 100%;
+        max-width: 1500px;
+    }
+</style>
 <body>
-    <header>
-        <div>
-          <h1>testing vs code</h1>
+    <!--Topbar-->
+    <div class="w3-top">         
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+            <!-- Navbar (sit on top) -->
+            <a href="#home" class="w3-bar-item w3-button"><b>HB</b></a>   
+            <div class="w3-right">
+                <span class="w3-button w3-padding-16 w3-right" onclick="sidebar_open()">
+                    <i class="fa fa-bars"></i>
+                </span> 
+                <div class="w3-clear"></div>
+            </div>          
+            <!-- Float links to the right. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="javascript:void(0)" onclick="loginbar_open()" class="w3-bar-item w3-button">Login</a>
+            </div>
         </div>
-    </header>
+    </div>
+
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+        <a href="javascript:void(0)" onclick="sidebar_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+            <i class="fa fa-remove"></i>
+        </a>
+        <div class="w3-bar-block w3-center">
+        <a href="#" class="w3-bar-item w3-padding w3-button w3-text-grey w3-hover-black">Login</a>    
+        <a href="#" class="w3-bar-item w3-padding w3-button w3-text-grey w3-hover-black">About</a>
+        <a href="#" class="w3-bar-item w3-padding w3-button w3-text-grey w3-hover-black">Contact</a>
+        </div>
+    </nav>
+    <!--loginbar-->
+    <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="loginbar">
+        <a href="javascript:void(0)" onclick="loginbar_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+            <i class="fa fa-remove"></i>
+        </a>
+        <div class="w3-bar-block w3-center">
+        <a href="#" class="w3-bar-item w3-padding w3-button w3-text-grey w3-hover-black">Login</a>    
+        <a href="#" class="w3-bar-item w3-padding w3-button w3-text-grey w3-hover-black">Admin Login</a>
+        </div>
+    </nav>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-content" id="home_page">
+        <div class="w3-display-middle w3-margin-top w3-center" id="homepage_top_screen">
+            <h1 class="w3-xxlarge w3-text-white">
+                <span class="w3-padding w3-black w3-opacity-min"><b>HB</b></span> 
+                <!--Hide on small screens -->
+                <span class="w3-hide-small w3-text-light-grey">HELENE</span>
+                <span class="w3-hide-small w3-text-light-grey">BANK</span>
+            </h1>
+        </div>
+    </div>
+
+    <script>
+        // Open and close sidebar
+        function sidebar_open() {
+        document.getElementById("mySidebar").style.width = "100%";
+        document.getElementById("mySidebar").style.display = "block";
+        }
+        function sidebar_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        }
+        function loginbar_open() {
+        document.getElementById("loginbar").style.width = "100%";
+        document.getElementById("loginbar").style.display = "block";
+        }
+        function loginbar_close() {
+        document.getElementById("loginbar").style.display = "none";
+        }
+    </script>
 </body>
 </html>
