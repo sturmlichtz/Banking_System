@@ -12,9 +12,11 @@
         width: 100%;
         max-width: 1500px;
     }
+    #login{
+    }
 </style>
 <body>
-    <!--Topbar-->
+    <!-- Topbar -->
     <div class="w3-top">         
         <div class="w3-bar w3-white w3-wide w3-padding w3-card">
             <!-- Navbar (sit on top) -->
@@ -27,7 +29,7 @@
             </div>          
             <!-- Float links to the right. Hide them on small screens -->
             <div class="w3-right w3-hide-small">
-                <a href="javascript:void(0)" onclick="loginbar_open()" class="w3-bar-item w3-button">Login</a>
+                <a href="#login" class="w3-bar-item w3-button">Login</a>
             </div>
         </div>
     </div>
@@ -38,19 +40,9 @@
             <i class="fa fa-remove"></i>
         </a>
         <div class="w3-bar-block w3-center">
-        <a href="#" class="w3-bar-item w3-padding w3-button w3-text-grey w3-hover-black">Login</a>    
-        <a href="#" class="w3-bar-item w3-padding w3-button w3-text-grey w3-hover-black">About</a>
-        <a href="#" class="w3-bar-item w3-padding w3-button w3-text-grey w3-hover-black">Contact</a>
-        </div>
-    </nav>
-    <!--loginbar-->
-    <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="loginbar">
-        <a href="javascript:void(0)" onclick="loginbar_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
-            <i class="fa fa-remove"></i>
-        </a>
-        <div class="w3-bar-block w3-center">
-        <a href="#" class="w3-bar-item w3-padding w3-button w3-text-grey w3-hover-black">Login</a>    
-        <a href="#" class="w3-bar-item w3-padding w3-button w3-text-grey w3-hover-black">Admin Login</a>
+        <a href="#login" onclick="sidebar_close()" class="w3-bar-item w3-padding w3-button w3-text-grey w3-hover-black w3-hide-large">Login</a>    
+        <a href="#" onclick="sidebar_close()" class="w3-bar-item w3-padding w3-button w3-text-grey w3-hover-black">About</a>
+        <a href="#" onclick="sidebar_close()" class="w3-bar-item w3-padding w3-button w3-text-grey w3-hover-black">Contact</a>
         </div>
     </nav>
 
@@ -60,9 +52,33 @@
             <h1 class="w3-xxlarge w3-text-white">
                 <span class="w3-padding w3-black w3-opacity-min"><b>HB</b></span> 
                 <!--Hide on small screens -->
-                <span class="w3-hide-small w3-text-light-grey">HELENE</span>
-                <span class="w3-hide-small w3-text-light-grey">BANK</span>
+                <span class="w3-hide-small w3-text-black">HELENE</span>
+                <span class="w3-hide-small w3-text-black">BANK</span>
             </h1>
+        </div>
+    </div>
+
+    <!-- Login (Login Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="login">
+        <p class="w3-center"><em>login</em></p>
+        <div class="w3-col m8 w3-panel" >
+            <form action="/action_page.php" target="_blank">
+                <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                    <div class="w3-half">
+                        <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                    </div>
+                    <div class="w3-half">
+                        <button class="w3-button w3-black" type="submit">
+                            <i class="fa fa-paper-plane"></i> Login
+                        </button>
+                    </div>
+                </div>
+            <input class="w3-input w3-border" type="text" placeholder="Password" required name="Password">
+            </form>
+            <a href="safe-banking-tips.html" class="w3-text-black">Safe Banking Tips
+                <i class="fa fa-university">
+                </i>
+            </a>
         </div>
     </div>
 
@@ -74,13 +90,6 @@
         }
         function sidebar_close() {
         document.getElementById("mySidebar").style.display = "none";
-        }
-        function loginbar_open() {
-        document.getElementById("loginbar").style.width = "100%";
-        document.getElementById("loginbar").style.display = "block";
-        }
-        function loginbar_close() {
-        document.getElementById("loginbar").style.display = "none";
         }
     </script>
 </body>
