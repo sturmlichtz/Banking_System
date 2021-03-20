@@ -204,7 +204,9 @@ form[action="/success"] .center {
     font-size: 1.5rem;
 }
 
-
+#transfer-headline{
+    margin-bottom: 20px;
+}
 
 #users-table{
     margin-top: 50px;

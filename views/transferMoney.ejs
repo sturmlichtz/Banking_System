@@ -1,28 +1,19 @@
 <%- include("header") -%>
-<% if (currentUserName) { %>
-    <head>
-        <link href="/css/users_list.css" rel="stylesheet">
-    </head>
-  <% } %>
 
-<div class="transfer-money-form col-md-5">
+
+
     <div class="row transferMoney">
         <div class="col-2 center">
-            
-        </div>
-        <div class="col-8 center">
-            <h3>Tranfer Money</h3>
-        </div>
-        <div class="col-2 center">
-          
         </div>
     </div>
-    
+    <h1 class="center col-md-4 user-history-heading mx-auto">
+        Tranfer Money
+     </h1>
     
     <div class="center">
         <p class="balance-display">Your current balance is Rs. <%= currentUserBalance %></p>
     </div>
-
+    <div class="center col-sm-5 mx-auto">
     <form action="/success" method="POST">
         <div class="form-group">
             <label for="from">From</label>
@@ -33,11 +24,16 @@
             <label for="to">To</label>
             <select class="form-control form-input-background" name="to" id="to" required>
                 <option value="" disabled selected>Select another user</option>
-                <% users.forEach(function(user){%>
-                <%if(user !== currentUserName){%>
-                <option value="<%= user %>"><%= user %></option>
-                <%}%>
-                <%});%>
+                <option value="lucas">Lucas</option>
+                <option value="Harry">Harry</option>
+                <option value="Dele">Dele</option>
+                <option value="Son">Son</option>
+                <option value="Moussa">Moussa</option>
+                <option value="Ben">Ben</option>
+                <option value="Serge">Serge</option>
+                <option value="Gareth">gareth</option>
+                <option value="Eric">Eric</option>
+                <option value="Hugo">Hugo</option>
             </select>
         </div>
         
@@ -46,12 +42,13 @@
             <input class="form-control form-input-background" type="number" name="balance" id="balance" min="0" max="<%=currentUserBalance %>" required>
         </div>
 
-        <div class="center" style="border-bottom: solid 2px lightgray;">
+        <div class="center">
             <button type="submit" class="form-submit-btn">Send</button>
         </div>
        
     </form>
-</div>
+    </div>
+
 
 
 
