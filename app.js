@@ -17,7 +17,7 @@ app.use(express.static("public"))
 app.set("view engine", "ejs");
 
 
-mongoose.connect("mongodb+srv://admin-roshan:9619Robb@cluster0.sxf7q.mongodb.net/simpleBankDB?retryWrites=true&w=majority", {
+mongoose.connect("Here-add-your-monogoDB's-Connect-To-cluster-URL", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false
