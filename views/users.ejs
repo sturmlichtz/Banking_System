@@ -1,0 +1,42 @@
+<%- include("header")-%>
+<% if (users) { %>
+    <head>
+        <link href="/css/users_list.css" rel="stylesheet">
+    </head>
+  <% } %>
+<div class=" col-md-5 center m-auto" id=users_list>
+    <table class="table table-bordered table-responsive-sm table-hover" id="users-table">
+        <thead>
+            <th class="th">SR NO.</th>
+            <th class="th">NAME</th>
+            <th class="th">EMAIL</th>
+            <th class="th">PROFILE</th>
+        </thead>
+
+        <tbody>
+            <% users.forEach(function(user,index){%>
+            <tr>
+                <td class="td" scope="row"><%= index+1 %></td>
+                <td class="td">
+                    <%= user.name %>
+                </td>
+                <td class="td">
+                    <%= user.email %>
+                </td>
+                <%let currentUser = JSON.stringify(user);%>
+                <td class="td">
+                    <form action="/user" method="POST">
+                        <button class="view-button" type="submit" name="user" value="<%= currentUser %>">
+                            <a>view</a>
+                        </button>
+                    </form>
+                </td>
+            </tr>
+            <%  });%>
+        </tbody>
+    </table>
+   
+</div>
+
+
+<%- include("footer") -%>
