@@ -1,9 +1,5 @@
 <%- include("header") -%>
-<% if (users) { %>
-    <head>
-        <link href="/css/users_list.css" rel="stylesheet">
-    </head>
-  <% } %>
+
 <%let history = currentUser.history;%>
 
 <% if(history.length===0){ %>

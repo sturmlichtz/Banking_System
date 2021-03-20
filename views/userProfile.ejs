@@ -1,21 +1,9 @@
 <%- include("header") -%>
-<% if (users) { %>
+<% if (currentUser) { %>
     <head>
         <link href="/css/users_list.css" rel="stylesheet">
     </head>
   <% } %>
-<div class="center">
-
-    <h1 class="user-profile-heading">USER PROFILE</h1>
-
-    <% if(currentUser.gender == "Male"){ %>
-    <img class="userImage" src="/images/male.png" alt="male">
-    <% }else{ %>
-    <img class="userImage" src="/images/female.png" alt="female">
-    <% } %>
-
-</div>
-
 <div class="col-md-7 m-auto" >
     <table class="table table-bordered table-responsive-sm " id="user-table">
         <tr>
