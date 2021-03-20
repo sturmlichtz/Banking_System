@@ -1,0 +1,352 @@
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    letter-spacing:1px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:white;
+    
+}
+
+hr{
+    height: 3px;
+    background-color: white;
+    border: none;
+}
+
+
+button{
+    border:none;
+    
+}
+
+p{
+    margin: 0;
+}
+
+
+.navbar{
+    position: relative;
+    z-index: 1;
+}
+.bank-icon{
+    width: 60px;
+    margin-right: 10px;
+
+}
+
+.center{
+    text-align: center;
+}
+
+.dark-color{
+    background-color: white;
+}
+.menu-bar{
+    color:black;
+}
+
+.navbar-brand{
+    font-weight: 700;
+    color:black;
+    
+}
+
+.nav-item{
+    opacity: 0.5;
+    font-weight: 600;
+}
+
+
+
+.balance-display{
+    font-weight: bold;
+    font-size: 1rem;
+    color: #393e46;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color:blue;
+}
+
+.fontSizeOneAndHalf{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.form-group{
+    border-top: solid 2px lightgrey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: #393e46;
+}
+
+form[action="/success"] .center {
+    border-top: solid 2px lightgray;
+}
+
+.form-input-background{
+    background-color: #f4eeff;
+}
+
+.transferMoney{
+    color: #000000;
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+
+.transfer-money-form{
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+
+
+.user-history-button , .transferMoney-button {
+    margin-bottom: 30px;
+    width: 200px;
+    color:black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 5px 0px 5px 0px;
+    
+}
+
+.user-history-button{
+    margin-bottom: 100px;
+}
+
+.form-submit-btn{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 5px 0px 5px 0px;
+    border-radius: 10px;
+}
+
+.fa-eye{
+    color: lightgrey;
+}
+
+ 
+.view-button {
+    border-radius: 10px;
+    background-color: bisque;
+}
+
+
+
+
+.wrapper{
+    padding-top: 20px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.nested-wrapper{
+    padding: 100px 0px;
+    margin-top: 50px;
+    background-color:white;
+    text-align: center;
+}
+.content{
+    
+    color: black;
+}
+
+.bank-image{
+    
+    height: 200px;
+    margin: 30px 0px;
+}
+
+.content p, .content h1 {
+    margin: 20px 0px;
+}
+
+.content h1{
+    font-weight: bold;
+}
+.content p {
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+.oops{
+    padding-top: 40px;
+    padding-bottom: 25px;
+    background-color:white;
+   
+    margin-bottom: 70px;
+}
+
+.oops img {
+    opacity: 0.6;
+    border-radius: 60px;
+    margin-bottom: 20px;
+}
+
+.oops p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(82, 80, 80);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+
+#users-table{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.table thead {
+    background-color: rgb(255, 255, 255);
+    color:#000000 ;
+}
+
+.table thead th{
+    border-bottom: solid 2px #000000;
+}
+
+.table-bordered td,.table-bordered th{
+    border: solid 2px #000000;
+}
+
+.table tbody {
+    color: #000000;
+    font-weight: 600;
+}
+
+.table tbody tr:nth-child(even) {
+background-color: white;
+}
+.table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.users-icon{
+    height: 60px;
+    width: 60px;
+    
+    box-shadow: 0px 0px 15px pink;
+    margin-bottom: 10px;
+}
+.all-users{
+    color:black;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+   
+}
+
+
+.footer-link-bar{
+    padding-top: 25px;
+    padding-bottom: 25px ;
+    min-width: 100%;
+}
+
+
+
+#user-table{
+    margin-bottom: 40px;
+}
+
+#user-table td {
+    border-radius: 11%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.user-profile-heading{
+    color: black;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    
+}
+.user-profile-data-heading{
+color: black;
+}
+
+.user-profile-data-val {
+    color: rgb(51, 47, 47);
+}
+
+.userImage{
+    border-radius: 50%;
+    
+    width: 250px;
+    height: 250px;
+    margin-bottom: 50px;
+}
+
+
+
+
+.positive{
+    color: green;
+}
+.negative{
+    color: red;
+}
+
+.user-history-heading{
+    color: #000000;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    
+}
+
+#user-history-table{
+    margin-bottom: 100px;
+    
+}
+
+
+#history-table{
+    margin-bottom: 100px;
+    
+}
+
+
+.success{
+    background-color: rgb(240, 231, 231);
+    
+    margin-bottom: 80px;
+    margin-top: 90px;
+}
+
+.success-para{
+    margin-bottom: 10px;
+}
+
+.success-heading{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.success-button{
+    width: 150px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
