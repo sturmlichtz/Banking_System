@@ -6,7 +6,7 @@ html{
 body{
     height: 100%;
     letter-spacing:1px;
-    font-family: OpenSans, Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     background-color:white;
     
 }
@@ -64,11 +64,11 @@ p{
 
 .balance-display{
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #393e46;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    color: #007bff;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color:blue;
 }
 
 .fontSizeOneAndHalf{
@@ -92,24 +92,6 @@ form[action="/success"] .center {
     background-color: #f4eeff;
 }
 
-
-.search-icon{
-    background: none;
-	color: inherit;
-	border: none;
-    padding-left: 20px;
-    padding-right: 20px;
-    font: inherit;
-    background-color: grey;
-	cursor: pointer;
-    outline: inherit;
-}
-.search-form{
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-
 .transferMoney{
     color: #000000;
     font-size: 2rem;
@@ -126,19 +108,12 @@ form[action="/success"] .center {
 
 .user-history-button , .transferMoney-button {
     margin-bottom: 30px;
-    width: 260px;
-    background-color:pink;
+    width: 200px;
     color:black;
     font-weight: bold;
     font-size: 1.2rem;
     padding: 5px 0px 5px 0px;
-    border: solid 1px rgb(231, 77, 16);
     
-}
-
-.user-history-button:hover , .transferMoney-button:hover {
-    background-color: rgb(252, 191, 59);
-   
 }
 
 .user-history-button{
@@ -148,21 +123,12 @@ form[action="/success"] .center {
 .form-submit-btn{
     margin-top: 30px;
     margin-bottom: 30px;
-    width: 150px;
-    background-color:pink;
+    width: 100px;
     color: #000000;
     font-weight: bold;
     font-size: 1.2rem;
     padding: 5px 0px 5px 0px;
-    border: solid 1px rgb(231, 84, 16);
     border-radius: 10px;
-    
-
-}
-
-.form-submit-btn:hover {  
-    background-color: rgb(59, 181, 252);
-    text-shadow: 0px 0px 10px rgb(139, 106, 106);
 }
 
 .fa-eye{
@@ -172,7 +138,7 @@ form[action="/success"] .center {
  
 .view-button {
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: bisque;
 }
 
 
@@ -210,7 +176,7 @@ form[action="/success"] .center {
 }
 .content p {
     font-size: 1.3rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -285,9 +251,6 @@ background-color: white;
 }
 
 
-
-
-
 .footer-link-bar{
     padding-top: 25px;
     padding-bottom: 25px ;
@@ -333,7 +296,7 @@ color: black;
 
 
 .positive{
-    color: darkgreen;
+    color: green;
 }
 .negative{
     color: red;
@@ -353,14 +316,10 @@ color: black;
 }
 
 
-
-
 #history-table{
     margin-bottom: 100px;
     
 }
-
-
 
 
 .success{
@@ -385,72 +344,9 @@ color: black;
     margin-top: 30px;
     margin-bottom: 25px;
     border-radius: 10px;
-    background-color: rgb(8, 153, 8);
+    background-color: green;
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.success-button:hover {
-    background-color: green;
-}
-
-.check-icon{
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    position: relative;
-    z-index: 1;
-    margin-top: -50px;
-}
-
-
-
-
-
-.other-details{
-    margin-bottom: 60px;
-}
-
-.other-details h1{
-    font-size: 1.3rem;
-    color: rgb(43, 40, 40);
-    font-weight: bold;
-}
-
-.text{
-    margin-bottom: 30px;
-    margin-top: 30px;
-    padding:20px 20px;
-    color: rgb(82, 77, 77);
-    background-color: rgb(228, 218, 218);
-    text-align: center;
-    
-}
-
-.text:first-child {
-    margin-bottom: 18px;
-}
-
-.text:last-child {
-    margin-top: 18px;
-    text-align: center;
-}
-
-.other-details a {
-    margin-top: 30px;
-    font-size: 2rem;
-    color: rgb(82, 77, 77);
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.other-details a:hover {
-    color: rgb(54, 52, 52);
-}
-
-
-
-.touch{
-    margin-top: 20px;
-}
-
 
