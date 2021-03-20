@@ -81,7 +81,17 @@ app.get("/sign-in", function(req, res){
     res.render("sign-in")
 })
 
-
+app.post('/login',
+passport.authenticate('local', { 
+successRedirect: '/',
+failureRedirect: '/sign-in'
+ }),
+  function(req, res) {
+    // If this function gets called, authentication was successful.
+    // `req.user` contains the authenticated user.
+    res.redirect('/users_list/');
+  });
+  
 app.get("/users", function (req, res) {
     User.find({}, function (err, foundUsers) {
         const users = JSON.stringify(defaultUserNames);
